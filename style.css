@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.search{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.1px solid black;
+    z-index: 1;
+    background-color: azure;
+}
+
+input {
+    padding: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 40px;
+    border: 1px solid #3d64e6;
+    outline: none;
+}
+.searchbtn{
+    padding: 10px 20px;
+    margin-left: 10px;
+    background: #3d64e6;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 40px;
+    cursor: pointer;
+    align-items: center;
+}
+.next{
+    position: fixed;
+    top: 90%;
+    right: 1%;
+    padding: 0.5em 0.5em;
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #3d64e6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gallery{
+    width: 90%;
+    margin: 12vh 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    flex-wrap: wrap;
+
+}
+.gallery div{
+    position: relative;
+    text-align: center;
+}
+img{
+    margin-left: 5px;
+    height: 300px;
+    width: 200px ;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+img:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: 1s all;
+
+}
+
+p{
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: black;
+}
+p span{
+    color: #3d64e6;
+    font-weight: 500;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3d64e6;
+}
+
+
+
+
+.light_theme
+{
+    color: black;
+    background: white;
+}
+
+.dark_theme
+{
+    color: #fff;
+    background: #333;
+}
+
+.switch_btn
+{
+    width: 55px;
+    height: 30px;
+    border-radius: 20px;
+    position: relative;
+    background: #3d64e6;
+}
+
+.light_theme .switch_btn
+{
+    background-size: contain;
+    border: 2px solid #111;
+}
+
+.dark_theme .switch_btn
+{
+    background-size: contain;
+    border: 2px solid #111;
+    margin-top: 2px;
+}
+
+.switch_btn:hover
+{
+    cursor: pointer;
+}
+
+.switch_rnd
+{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+}
+
+.light_theme .switch_rnd
+{
+    right: 2px;
+    background: #111;
+    margin-top: -1px;
+}
+
+.dark_theme .switch_rnd
+{
+    left: 2px;
+    background: #fff;
+    margin-top: -1px;
+}
+
+.switch_theme{
+    margin-left: 5px;
+}
